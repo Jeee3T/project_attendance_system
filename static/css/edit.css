@@ -1,0 +1,155 @@
+
+
+body{
+  background-color: rgb(0, 0, 0);
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+
+}
+
+.appname{
+  position: absolute;
+  color: aliceblue;
+  left:54px;
+  top:22px;
+  
+}
+
+.top-navbar{
+  height: 70px;
+  
+
+}
+
+.top-navbar img{
+  width: 40px;
+  padding: 10px;
+   
+}
+
+.top-navbar ul {
+
+  float:right;
+  margin-right: 25px;
+
+}
+
+.top-navbar ul li{
+  display: inline-block;
+  margin: 0 15px;
+  height: 70px;
+  padding: 20px;
+
+}
+
+
+
+.top-navbar ul li a{
+   
+  position: relative;
+  color: white;
+  font-size: 15px;
+  
+  text-transform: uppercase;
+  
+}
+ 
+.top-navbar ul li a::before{
+ position: absolute;
+ content: '';
+ top: 20px;
+ left: 0;
+ right: 0;
+ height: 1px;
+ width: 100%;
+ background: white;
+ transform: scaleX(0);  
+ transform-origin: right;
+ transition: transform .50s linear;
+}
+
+.top-navbar ul li a:hover:before{
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.v1{
+  border-left: 1px solid rgb(255, 255, 255);
+  height: 700px;
+  position: absolute;
+  left: 50%;
+  margin-left: -8px;
+  top: 50px;
+  bottom:50px;
+ 
+}
+
+.ill{
+  position:fixed;
+  top: 200px;
+  height: 350px;
+  width:650px;
+  left: 50px;
+  
+}
+
+ 
+.opt{
+  position: relative;
+  float:right;
+  width: 550px;;
+  height:330px;
+  left:400px;
+  top: 100px;
+}
+
+
+.opt h1{
+  position: relative;
+  color: aliceblue;
+  left: 60px;
+  top:50px;
+  text-transform: uppercase;
+}
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+.student{
+  position: absolute;
+  top: 150px;
+  left: 220px;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  border: 2px solid #ffffff;
+}
+
+.teacher{
+  position: absolute;
+  border-radius: 5px;
+  top: 270px;
+  left: 220px;
+  background-color: white;
+  color: black;
+  border: 2px solid #ffffff;
+}
+

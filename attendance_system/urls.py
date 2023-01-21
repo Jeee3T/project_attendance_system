@@ -18,6 +18,7 @@ from django.urls import path
 from attendance_system import views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('home/',views.homePage)
+     path('admin-panel/', admin.site.urls),
+     path('', views.homePage), 
+     
 ]

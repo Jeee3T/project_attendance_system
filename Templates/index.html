@@ -1,12 +1,57 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+
+
+    <title>TRACKKIE</title>
+    <link rel="icon" href="{% static '/img/logo.png' %}">
+
+
+    {% comment %}---------------- css--------------- {% endcomment %}
+    <link rel="stylesheet" href={% static "/css/edit.css"%}>
+
+
+    {% comment %} ---------------fonts-------------- {% endcomment %}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap" rel="stylesheet">
 </head>
 <body>
-   <h1>Welcome to the HomePage </h1> 
+    <nav class="top-navbar">
+        <h3 class='appname'>TRACKKIE</h3>
+        <img src={% static "/img/logo.png" %} alt="logo">
+        
+        <ul>
+            <li ><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Feedback</a></li>
+            
+        </ul>
+    </nav>
+    
+    <div class="v1"></div>
+    
+ 
+<content>
+ <div> <img class="ill" src="{% static "/img/illust.png" %}" alt="illustration"></div>
+
+ <div class='opt'>
+    <h1>Choose your profession</h1>
+    <button class=" button student">STUDENT</button>
+    <button  class=" button teacher" >TEACHER</button>
+ </div>
+
+
+</content>
+<footer>
+     
+</footer>
+    
+     
 </body>
 </html>
